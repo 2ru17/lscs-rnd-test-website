@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <a href="#">Placeholder 1</a>
+                </li>
+                <li>
+                    <a href="#">Placeholder 2</a>
+                </li>
+                <li>
+                    <a href="#">Placeholder 3</a>
+                </li>
+                <li>
+                    <a href="#">Placeholder 4</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="intro-row">
+                <section id="intro">
+                    <h1>Neil Jr.</h1>
+                    <h4>2ru17</h4>
+                    <p>This is a short introduction about myself. I'm passionate about technology and web development. I'm still a beginner and has not completed CCPROG2 yet, so poggers, yet here I am munching 3 more coding languages; makes me wanna jump off a cliff. I don't really get what I'm doing here.</p>
+                    <section id="character-img">
+                        <img src="/eta cool.png" alt="Character">
+                    </section>
+                    <div class="button-container">
+                        <a href="https://github.com/2ru17" target="_blank" class="custom-btn github-btn">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/n172980/" target="_blank" class="custom-btn linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://www.youtube.com/@2ru_17" target="_blank" class="custom-btn youtube-btn">
+                            <i class="fab fa-youtube"></i>
+                            YouTube
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <!-- <div class="section-divider"></div> bruh it wont work-->
+            <section id="blog-section">
+                <div class="blog-container">
+                    <h2 class="blog-heading">My Blog</h2>
+                    <!-- Blog creation form -->
+                    <div class="blog-form">
+                        <input type="text" id="title-input" placeholder="Blog title">
+                        <textarea id="content-input" placeholder="Blog content"></textarea>
+                        <div class="image-upload-section">
+                            <input
+                                type="file"
+                                id="image-input"
+                                accept="image/*"
+                                style="display: none;"
+                            >
+                            <button type="button" id="image-btn" class="custom-btn image-upload-btn">
+                                <i class="fas fa-image"></i>
+                                Add Image (Optional)
+                            </button>
+                            <span id="image-preview-name"></span>
+                        </div>
+                        <button id="add-btn" class="custom-btn">
+                            <i class="fas fa-plus"></i>
+                            Add Post
+                        </button>
+                    </div>
+                    <div id="blog-posts" class="blog-posts">
+                        <!-- Blog posts will appear here etc etc --></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2ru17</p>
+        </footer>
+        <script src="blog-create.js"></script>
+    </body>
+</html>
